@@ -1,28 +1,4 @@
-## Lab 2: The Multi-Cluster IP Audit Tool
 
-
-### Learning Objectives
-- Lists (`list`) and Dictionaries (`dict`)
-
-- Sequential Loops (`for loop`)
-
-- Arithmetic Operations (Counting & Percentages)
-
-
-### Scenario
-Your cloud infrastructure just generated a raw audit log of all active internal application routes. You need to parse this map to tally how many endpoints exist and evaluate system capacity variables.
-
-
-### Task Instructions
-1. Use the provided `cluster_config` nested dictionary structure.
-
-2. Write a function named `calculate_capacity` that uses a loop to extract the item values from the `active_nodes` list.
-
-3. Calculate the percentage of cluster utilization:
-
-$$\text{Utilization \%} = \left( \frac{\text{Active Nodes}}{\text{Total Max Slots}} \right) \times 100$$
-
-4. Print a clean summary report using string interpolation.
 
 
 # --- STARTER CODE ---
@@ -35,8 +11,12 @@ cluster_config = {
 
 def calculate_capacity(config):
     # TODO: Calculate how many items are in the active_nodes list
+    Used len function for calculate the active nodes from the list 
     # TODO: Run the mathematical formula to find utilization percentage
+    used utilization = (total_active_nodes / config["total_max_slots"]) * 100 formula for find the utilization .
+
     # TODO: Print the status statement
+    used print function for print the statement 
     pass
 
 # Execute the audit tool
