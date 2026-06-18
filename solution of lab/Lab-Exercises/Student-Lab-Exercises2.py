@@ -6,9 +6,11 @@ cluster_config = {
 
 def calculate_capacity(config):
     # Calculate how many items are in the active_nodes list
-    total_active_nodes = len(config["active_nodes"])
-
-    # Run the mathematical formula to find utilization percentage
+    total_active_nodes =0
+    for node in config["active_nodes"] :
+        total_active_nodes += 1
+   
+   # Run the mathematical formula to find utilization percentage
     utilization = (total_active_nodes / config["total_max_slots"]) * 100
 
     # Print the status statement
